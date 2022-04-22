@@ -5,4 +5,6 @@ Build & Push to dockerhub:
 
 docker build . -t tap-dbfit
 
-docker push tap-dbfit ministryofjustice/dbfit:3.2-jre11
+docker tag tap-dbfit ministryofjustice/dbfit
+
+docker push ministryofjustice/dbfit:3.2-jre11
